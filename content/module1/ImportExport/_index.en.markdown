@@ -810,6 +810,21 @@ Note that the `covid_uk$data` is a data frame with a list `newCasesByPublishDate
 
 Ouch! 😳 JSON files are not very neat 😱 They are more than often nested, chained -> you’ve got it: Very Messy! 😫 So, we will leave it there. 😬 If you do need to learn more about reading JSON files in R you can explore the functionality of the `jsonlite` package further by reading [Getting started with JSON and jsonlite](https://cran.r-project.org/web/packages/jsonlite/vignettes/json-aaquickstart.html). The blog post [Working with JSON data in very simple way](https://blog.exploratory.io/working-with-json-data-in-very-simple-way-ad7ebcc0bb89) by [Kan Nishida](https://blog.exploratory.io/@kanaugust) provides a great example of how this data format can be used in R. 
 
+Run the following code: 
+
+
+```r
+## If you don't have readxl installed yet, uncomment the line below and run it 
+#install.packages("jsonlite")
+library(jsonlite)
+my_url <-"https://data.gov.rs/sr/datasets/r/41c2fe91-4ea1-4a64-b33c-183665ea6ab3"
+polen <- fromJSON(my_url)
+```
+
+Check the structure of the `polen`! 😰
+
+Note that the `polen$results` is a data frame with a list `concentrations` inside as its element. 
+
 ### Other data formats
 
 To speed up the reading process of txt, csv data files you can use the `data.table::fread()` function. You should only pass to the function the name of the data file you want to import, and `fread()` will try to work out the appropriate data structure. Check out this blog post [Getting Data From An Online Source](https://www.r-bloggers.com/getting-data-from-an-online-source/) for some more ideas. 
@@ -819,9 +834,15 @@ You can use R with appropriate packages to access other data formats. The `haven
 
 ## YOUR TURN 👇
 
-1) See if you can find data from <https://data.gov.uk/> about a topic you’re interested in.
+1) See if you can find data from <https://data.gov.rs/> or
+<https://data.gov.uk/> about a topic you’re interested in.
 
-2) Have a look at this data set: [General Election Results 2010](https://data.gov.uk/dataset/a879833b-f88f-4597-b082-c74ea71518fd/general-election-results-2010). Think about the questions you can answer based on this data.
+2) Have a look at one of these data sets: 
+
+- [saobracaj](https://data.gov.rs/sr/datasets/podatsi-o-saobratshajnim-nezgodama-po-politsijskim-upravama-i-opshtinama/)
+- [General Election Results 2010](https://data.gov.uk/dataset/a879833b-f88f-4597-b082-c74ea71518fd/general-election-results-2010). 
+
+Think about the questions you can answer based on the chosen data.
 
 -----------------------------
 © 2021 Tatjana Kecojevic

@@ -12,18 +12,18 @@
     <title>Import Data to R :: DS Bootcamp in R</title>
 
     
-    <link href="/css/nucleus.css?1614446765" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1614446765" rel="stylesheet">
-    <link href="/css/hybrid.css?1614446765" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1614446765" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1614446765" rel="stylesheet">
-    <link href="/css/auto-complete.css?1614446765" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1614446765" rel="stylesheet">
-    <link href="/css/theme.css?1614446765" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1614446765" rel="stylesheet">
+    <link href="/css/nucleus.css?1614788318" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1614788318" rel="stylesheet">
+    <link href="/css/hybrid.css?1614788318" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1614788318" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1614788318" rel="stylesheet">
+    <link href="/css/auto-complete.css?1614788318" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1614788318" rel="stylesheet">
+    <link href="/css/theme.css?1614788318" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1614788318" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1614446765"></script>
+    <script src="/js/jquery-3.3.1.min.js?1614788318"></script>
 
     <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"> </script>
 
@@ -59,14 +59,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1614446765"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1614446765"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1614788318"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1614788318"></script>
 <script type="text/javascript">
     
         var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1614446765"></script>
+<script type="text/javascript" src="/js/search.js?1614788318"></script>
 
     
   </div>
@@ -1416,18 +1416,32 @@ covid_uk <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">fr
 ## [4] &quot;length&quot;                &quot;newCasesByPublishDate&quot;
 </code></pre><p>Note that the <code>covid_uk$data</code> is a data frame with a list <code>newCasesByPublishDate</code> inside as its element.</p>
 <p>Ouch! 😳 JSON files are not very neat 😱 They are more than often nested, chained -&gt; you’ve got it: Very Messy! 😫 So, we will leave it there. 😬 If you do need to learn more about reading JSON files in R you can explore the functionality of the <code>jsonlite</code> package further by reading <a href="https://cran.r-project.org/web/packages/jsonlite/vignettes/json-aaquickstart.html">Getting started with JSON and jsonlite</a>. The blog post <a href="https://blog.exploratory.io/working-with-json-data-in-very-simple-way-ad7ebcc0bb89">Working with JSON data in very simple way</a> by <a href="https://blog.exploratory.io/@kanaugust">Kan Nishida</a> provides a great example of how this data format can be used in R.</p>
+<p>Run the following code:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e">## If you don&#39;t have readxl installed yet, uncomment the line below and run it </span>
+<span style="color:#75715e">#install.packages(&#34;jsonlite&#34;)</span>
+<span style="color:#a6e22e">library</span>(jsonlite)
+my_url <span style="color:#f92672">&lt;-</span><span style="color:#e6db74">&#34;https://data.gov.rs/sr/datasets/r/41c2fe91-4ea1-4a64-b33c-183665ea6ab3&#34;</span>
+polen <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">fromJSON</span>(my_url)
+</code></pre></div><p>Check the structure of the <code>polen</code>! 😰</p>
+<p>Note that the <code>polen$results</code> is a data frame with a list <code>concentrations</code> inside as its element.</p>
 <h3 id="other-data-formats">Other data formats</h3>
 <p>To speed up the reading process of txt, csv data files you can use the <code>data.table::fread()</code> function. You should only pass to the function the name of the data file you want to import, and <code>fread()</code> will try to work out the appropriate data structure. Check out this blog post <a href="https://www.r-bloggers.com/getting-data-from-an-online-source/">Getting Data From An Online Source</a> for some more ideas.</p>
 <p>You can use R with appropriate packages to access other data formats. The <code>haven</code> package provides functions for importing SAS, SPSS and Stata file formats or you can use the <code>foreign</code> package for MiniTab portable worksheet data files. Try to look through the help section of the packages you&rsquo;ve been introduced to and discover other options.</p>
 <h2 id="your-turn-">YOUR TURN 👇</h2>
 <ol>
 <li>
-<p>See if you can find data from <a href="https://data.gov.uk/">https://data.gov.uk/</a> about a topic you’re interested in.</p>
+<p>See if you can find data from <a href="https://data.gov.rs/">https://data.gov.rs/</a> or
+<a href="https://data.gov.uk/">https://data.gov.uk/</a> about a topic you’re interested in.</p>
 </li>
 <li>
-<p>Have a look at this data set: <a href="https://data.gov.uk/dataset/a879833b-f88f-4597-b082-c74ea71518fd/general-election-results-2010">General Election Results 2010</a>. Think about the questions you can answer based on this data.</p>
+<p>Have a look at one of these data sets:</p>
 </li>
 </ol>
+<ul>
+<li><a href="https://data.gov.rs/sr/datasets/podatsi-o-saobratshajnim-nezgodama-po-politsijskim-upravama-i-opshtinama/">saobracaj</a></li>
+<li><a href="https://data.gov.uk/dataset/a879833b-f88f-4597-b082-c74ea71518fd/general-election-results-2010">General Election Results 2010</a>.</li>
+</ul>
+<p>Think about the questions you can answer based on the chosen data.</p>
 <hr>
 <p>© 2021 Tatjana Kecojevic</p>
 
@@ -1774,19 +1788,19 @@ covid_uk <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">fr
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1614446765"></script>
-    <script src="/js/perfect-scrollbar.min.js?1614446765"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1614446765"></script>
-    <script src="/js/jquery.sticky.js?1614446765"></script>
-    <script src="/js/featherlight.min.js?1614446765"></script>
-    <script src="/js/highlight.pack.js?1614446765"></script>
+    <script src="/js/clipboard.min.js?1614788319"></script>
+    <script src="/js/perfect-scrollbar.min.js?1614788319"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1614788319"></script>
+    <script src="/js/jquery.sticky.js?1614788319"></script>
+    <script src="/js/featherlight.min.js?1614788319"></script>
+    <script src="/js/highlight.pack.js?1614788319"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1614446765"></script>
-    <script src="/js/learn.js?1614446765"></script>
-    <script src="/js/hugo-learn.js?1614446765"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1614788319"></script>
+    <script src="/js/learn.js?1614788319"></script>
+    <script src="/js/hugo-learn.js?1614788319"></script>
 
-    <link href="/mermaid/mermaid.css?1614446765" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1614446765"></script>
+    <link href="/mermaid/mermaid.css?1614788319" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1614788319"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

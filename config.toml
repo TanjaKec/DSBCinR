@@ -1,4 +1,4 @@
-baseURL = "https://dsbcinr.netlify.app/"
+baseURL = "https://dsbootcampinr.netlify.app/"
 languageCode = "en-US"
 defaultContentLanguage = "en"
 
@@ -14,6 +14,7 @@ defaultContentLanguageInSubdir= true
   showVisitedLinks = true
   disableBreadcrumb = false
   disableNextPrev = false
+  
 
 [params.logo]
 url = "logo.jpg"
@@ -33,3 +34,6 @@ name = "<i class='fab fa-fw fa-github'></i>GitHub"
 identifier = "ds"
 url = "https://github.com/TanjaKec"
 weight = 10
+
+landingPageURL = "/"
+landingPageName = "<i class='fas fa-home'></i> Home"
