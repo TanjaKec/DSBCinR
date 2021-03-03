@@ -357,7 +357,7 @@ If you are unable to open the file in Excel to examine how many sheets the file 
 ## If you don't have readxl installed yet, uncomment the line below and run it 
 #install.packages("readxl")
 library(readxl)
-df_xl <- read_excel("Dec 2018 - YouGov GLA poll results", sheet = 1)
+df_xl <- read_excel("Dec 2018 - YouGov GLA poll results.xls", sheet = 1)
 ```
 
 What do you think?
