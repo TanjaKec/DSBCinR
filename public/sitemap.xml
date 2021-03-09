@@ -44,6 +44,7 @@
   
   <url>
     <loc>/module2/</loc>
+    <lastmod>2016-04-09T16:50:16+02:00</lastmod>
   </url>
   
   <url>
@@ -80,7 +81,27 @@
   </url>
   
   <url>
+    <loc>/module2/datawrangling/</loc>
+    <lastmod>2016-04-09T16:50:16+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/module1/rmarkdown/</loc>
+    <lastmod>2016-04-09T16:50:16+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/module2/principlesvisualisation/</loc>
+    <lastmod>2016-04-09T16:50:16+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/module2/visualisation/</loc>
+    <lastmod>2016-04-09T16:50:16+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/module2/spatialda/</loc>
     <lastmod>2016-04-09T16:50:16+02:00</lastmod>
   </url>
   

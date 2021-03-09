@@ -14,13 +14,13 @@ weight: 3
 
 #### What you will learn:
 
-*	`dplyr`’s key data manipulation verbs: select, mutate, filter, arrange and summarise/summarize
-* To aggregate data by groups
-* To chain data manipulation operations using the pipe operator
-* Basic principles of effective data visualisation
-* To specify `ggplot2` building blocks and combine them to create graphical display
-* About the philosophy that guides `ggplot2`: grammatical elements (layers) and aesthetic mapping
-*	Visualising data with maps
+* dplyr’s key data manipulation verbs: select, mutate, filter, arrange and summarise/summarize
+* to aggregate data by groups
+* to chain data manipulation operations using the pipe operator
+* basic principles of effective data visualisation
+* to specify ggplot2 building blocks and combine them to create graphical display
+* about the philosophy that guides ggplot2: grammatical elements (layers) and aesthetic mappings
+* visualising data with maps
 
 -----------------------------
 © 2021 Tatjana Kecojevic
