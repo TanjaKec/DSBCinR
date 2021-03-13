@@ -60,21 +60,24 @@ weight: 12
 <p>To import an ESRI shapefile into R correctly, all three files must be present in the directory and named the same (except for the file extension).</p>
 <p>Let us start by reading a shape file of Serbian districts’ boundaries available from <a href="https://gadm.org/download_country_v3.html">GADM maps and data</a>.</p>
 <p>First, download the files we will need from the following GitHub repository: <a href="https://github.com/TanjaKec/gadm36_SRB_shp" class="uri">https://github.com/TanjaKec/gadm36_SRB_shp</a>. Make sure you save the file into your R-Project working directory before you ask R to execute the following</p>
-<pre><code>library(ggplot2)
+<pre><code>## If you don&#39;t have sf installed yet, uncomment and run the line below
+#install.packages(&quot;sf&quot;)
+library(ggplot2)
 library(sf)
 
 #pointed to the shape file
-eu &lt;- &quot;eu_countries_simplified.shp&quot;
+bound &lt;- &quot;eu_countries_simplified.shp&quot;
 
 #used the st_read() function to import it
-eu &lt;- st_read(eu)
+bound &lt;- st_read(bound)
 
 # plot the map
-ggplot(eu) + 
+ggplot(bound) + 
   geom_sf()</code></pre>
 <p><img src="/module2/SpatialDA/images/plot_eu.png?width=40pc" /></p>
 <p>This looks good 😃 Next, we want to add some data to it and do some ‘colouring’. We will incorporate information about `Cumulative number for 14 days of COVID-19 cases per 100000 on 14-Novov-202’ given in “covid_EU.csv” file.</p>
 <pre><code>library(dplyr)
+library(forcats)
 covid_EU &lt;- read.csv(&quot;covid_EU.csv&quot;)
 
 

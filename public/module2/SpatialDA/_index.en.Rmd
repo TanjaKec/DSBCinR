@@ -54,17 +54,19 @@ Let us start by reading a shape file of Serbian districts' boundaries available 
 First, download the files we will need from the following GitHub repository: <https://github.com/TanjaKec/gadm36_SRB_shp>. Make sure you save the file into your R-Project working directory before you ask R to execute the following
 
 ```
+## If you don't have sf installed yet, uncomment and run the line below
+#install.packages("sf")
 library(ggplot2)
 library(sf)
 
 #pointed to the shape file
-eu <- "eu_countries_simplified.shp"
+bound <- "eu_countries_simplified.shp"
 
 #used the st_read() function to import it
-eu <- st_read(eu)
+bound <- st_read(bound)
 
 # plot the map
-ggplot(eu) + 
+ggplot(bound) + 
   geom_sf()
 ```
 
@@ -74,6 +76,7 @@ This looks good 😃 Next, we want to add some data to it and do some 'colouring
 
 ```
 library(dplyr)
+library(forcats)
 covid_EU <- read.csv("covid_EU.csv")
 
 
