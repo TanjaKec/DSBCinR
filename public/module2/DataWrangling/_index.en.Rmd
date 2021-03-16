@@ -148,7 +148,7 @@ knitr::include_graphics("images/select().png")
 
 1) that ends with letter `p`
 
-2) starts with letter `co`. Try to do this selection using base R.  
+2) starts with letters `co`. Try to do this selection using base R.  
 
 😃🙌 Solutions:
 

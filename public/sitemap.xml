@@ -18,6 +18,11 @@
   </url>
   
   <url>
+    <loc>/module3/damethodology/</loc>
+    <lastmod>2016-04-09T16:50:16+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/module1/installr/</loc>
     <lastmod>2021-02-27T16:50:16+02:00</lastmod>
   </url>
@@ -29,6 +34,11 @@
   
   <url>
     <loc>/general/instructor/</loc>
+    <lastmod>2016-04-09T16:50:16+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/module3/mva/</loc>
     <lastmod>2016-04-09T16:50:16+02:00</lastmod>
   </url>
   
@@ -48,12 +58,18 @@
   </url>
   
   <url>
-    <loc>/module1/rstudioide/</loc>
+    <loc>/module3/mvm/</loc>
     <lastmod>2016-04-09T16:50:16+02:00</lastmod>
   </url>
   
   <url>
     <loc>/module3/</loc>
+    <lastmod>2016-04-09T16:50:16+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/module1/rstudioide/</loc>
+    <lastmod>2016-04-09T16:50:16+02:00</lastmod>
   </url>
   
   <url>
