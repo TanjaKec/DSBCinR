@@ -566,6 +566,7 @@ Based on the sample evidence there is a relationship between 'Share Price' and '
 2) Use the supermarket data available from: <https://tanjakec.github.io/mydata/SUPERM.csv> with description of the variables available in this [data dictionary](https://tanjakec.github.io/mydata/SUPERMARKET DATA.doc).
 
 The management team is interested in analysing their customers spending. You can help them to 
+
 - identify which of the attribute type factors in this data set influence customer's spending 
 - provide a brief descriptions of identified relationships  
 
