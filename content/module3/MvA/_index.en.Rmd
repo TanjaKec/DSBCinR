@@ -304,7 +304,7 @@ The four stages are:
 
 - **Stage 2**:	Defining the test parameters and the decision rule
 
-For the 'M vs A' problem, what is required to help decide based on the sample evidence between the two options H0 & H1 is a measure of the relative separation of the boxplots. This relative measure should consider the difference between the two means and the variability of the data for both levels of the attribute. This measure of the relative separation of the boxplots should take into account the means and the standard deviations of the two samples.  
+For the 'M vs A' problem, what is required to help decide based on the sample evidence between the two options $H_0$ & $H_1$ is a measure of the relative separation of the boxplots. This relative measure should consider the difference between the two means and the variability of the data for both levels of the attribute. This measure of the relative separation of the boxplots should take into account the means and the standard deviations of the two samples.  
 
 An agreed decision rule can be formulated that specifies that if this relative measure of the separation of the boxplots is greater than a threshold value then there is a connection, otherwise there is no evidence to support a link.
 
@@ -334,7 +334,7 @@ As we now realise, this stage calculates two key pieces of information, the valu
 
 In practice this means using the sample data to calculate two things:
 
-> The numerical value of $t_{calc}$ and the value of the degrees of freedom (**df**). This provides all the information to complete the test, the df figure enables the precise value of t_calc to be looked in the statistical tables or directly obtained in R. Once this value is known, the conclusion results?? by applying mechanically the decision rule as seen above:
+> The numerical value of $t_{calc}$ and the value of the degrees of freedom (**df**). This provides all the information to complete the test, the df figure enables the precise value of t_calc to be looked in the statistical tables or directly obtained in R. Once this value is known, the conclusion results by applying mechanically the decision rule as seen above:
 >
 >  + If $t_{calc}$ value is numerically between the range $-t_{crit}$ & $+t_{crit}$ then the decision rule is flagging $H_0$. There is no relationship.  
 > 
@@ -365,7 +365,7 @@ This is a two-tailed test of 5 percent significant level (thus, $p = 1 - 0.5 / 2
 qt(0.975, 56.578)
 ```
 
-This means that in order to reject the null hypothesis our test statistic needs to be bigger than $t_{crit}=2.00$, and hence conclude that there is a relationship between the two variables used in the analysis. $t_{calc}=-3.46 < t_{crit}=2.00$ => $H_1$, thus there is a relationship between the variables: Share_Price and Competition, hence DESCRIBE THE RELATIONSHIP!!!
+This means that in order to reject the null hypothesis our test statistic needs to be bigger than $t_{crit}=2.00$ or smaller than $-t_{crit}=-2.00$, and hence conclude that there is a relationship between the two variables used in the analysis. $t_{calc}=-3.46 < -t_{crit}=-2.00$ => $H_1$, thus there is a relationship between the variables: Share_Price and Competition, hence DESCRIBE THE RELATIONSHIP!!!
 
 {{% notice note %}}
 This FDA was an unnecessary step in our DA for `Share_Price vs Competition`, as we were able to make a clear conclusion about the nature of the relationship by conducting IDA.   
@@ -393,7 +393,7 @@ Conversely: *If the average value of the response variable is dependent on the l
 
 If the sample evidence is inconclusive then further data analysis is required.  
 
-If further data analysis is required then it takes the form of a hypothesis test. The data analysis situation Measured v Attribute requires two different hypothesis tests. A hypothesis test for the data analysis situation where the attribute explanatory variable has exactly two levels has been discussed earlier in this chapter.
+If further data analysis is required then it takes the form of a hypothesis test. The data analysis situation Measured v Attribute requires two different hypothesis tests. A hypothesis test for the data analysis situation where the attribute explanatory variable has exactly two levels has been discussed earlier in this section.
 
 A different hypothesis test is required for the situation where the attribute explanatory variable has three or more levels. The principles remain the same; if there is no connection then by definition all the true means will be the same, whilst if there is a connection then the means are likely to be different. The problem is exactly the same as with the two level attribute situation, namely, is the difference between the means large enough to suggest that there is a real difference, or is the difference a difference that could have occurred by pure chance? (The difference is within the limits of sampling error).
 
@@ -493,9 +493,9 @@ By examining the boxplots we can suggest that the information in the sample is i
 
 **The Formal Data Analysis:	The hypothesis test** for `Share_Price vs Sector`
 
-**Stage 1:** Specifying the hypotheses (H0 & H1)
+**Stage 1:** Specifying the hypotheses ($H_0$ & $H_1$)
 
-- $H0:  \mu_1 = \mu_2 = \mu_3$	
+- $H_0:  \mu_1 = \mu_2 = \mu_3$	
 - $H_1:  \text{at least one mean is different}$
 
 **Stage 2:** Defining the test parameters and the decision rule
@@ -522,7 +522,7 @@ F_crit <- qf(0.95, 2, 57)
 F_crit
 ```
 
-$F_{calc} = 14.93 > F_{crit} = 3.16 => accept H_1$, ie. 'Share Price' depends upon 'Sector' within which the company operates. The next question is **how**? Accepting $H_1$ means that the ANOVA-test indicates that at least one group is different from all the others. Who is different from who? We need to fully describe this relationship, by pointing out which groups are different from which.
+$F_{calc} = 14.93 > F_{crit} = 3.16 =>$ accept $H_1$, ie. 'Share Price' depends upon 'Sector' within which the company operates. The next question is **how**? Accepting $H_1$ means that the ANOVA-test indicates that at least one group is different from all the others. Who is different from who? We need to fully describe this relationship, by pointing out which groups are different from which.
 
 A Boxplot will often help you to recognise the obvious differences, but we have proceeded to do one-way ANOVA because those differences were not obvious. How to overcome this obstacle? We need a clear description of the relationship found, pointing out where the difference lays. To do this, we need a pairwise comparison between the groups, which in our case are:
 
@@ -549,7 +549,7 @@ This can be visualised by a plot of the list:
 plot(TukeyHSD(m1))
 ```
 
-Looking at the output above and the plot of those 95% CI’s we can see that none of them contains the value of zero. The implication of this is that for all three pairwise comparisons we acept H1. Looking at the output of the descriptive statistics we can conclude: $\mu_1 < \mu_2 < \mu_3$. Now we can make the conclusion for our analysis.
+Looking at the output above and the plot of those 95% CI’s we can see that none of them contains the value of zero. The implication of this is that for all three pairwise comparisons we acept $H_1$. Looking at the output of the descriptive statistics we can conclude: $\mu_1 < \mu_2 < \mu_3$. Now we can make the conclusion for our analysis.
 
 **Stage 4:**	The conclusions.
 
@@ -562,6 +562,13 @@ Based on the sample evidence there is a relationship between 'Share Price' and '
 **YOUR TURN** 👇
 
 1) Investigate the nature of the relationship in Share Price Study data for `Share_Price vs Type`.
+
+2) Use the supermarket data available from: <https://tanjakec.github.io/mydata/SUPERM.csv> with description of the variables available in this [data dictionary](https://tanjakec.github.io/mydata/SUPERMARKET DATA.doc).
+
+The management team is interested in analysing their customers spending. You can help them to 
+- identify which of the attribute type factors in this data set influence customer's spending 
+- provide a brief descriptions of identified relationships  
+
 
 ----
 Check out this tweet and learn more about the #rstats boxplots:
