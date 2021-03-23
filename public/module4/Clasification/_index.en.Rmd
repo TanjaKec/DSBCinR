@@ -880,14 +880,6 @@ summary(modelDifferences)
  
 The $p$-values for the model comparisons are large (0.85 for accuracy and 0.34 for Kappa) indicating that the models fail to show any difference in performance. 
 
-<p><font color="black" face="Verdana, Geneva, sans-serif" size="+1.5">**YOUR TURN 👇**</font></p> 
-
-Practise by doing the following set of exercises:
-
-1) Try out data classification using the KNN algorithm using [Air Quality Data](https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/airquality.html)
-
-AppliedPredictiveModeling::data(twoClassData)
-
 <p><font color="black" face="Verdana, Geneva, sans-serif" size="+1.5">**YOUR TURN 👇**</font></p>
 
 Practise by doing the following exercises:
