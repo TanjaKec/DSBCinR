@@ -12,18 +12,18 @@
     <title>Multiple Regression :: DS Bootcamp in R</title>
 
     
-    <link href="/css/nucleus.css?1614446274" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1614446274" rel="stylesheet">
-    <link href="/css/hybrid.css?1614446274" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1614446274" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1614446274" rel="stylesheet">
-    <link href="/css/auto-complete.css?1614446274" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1614446274" rel="stylesheet">
-    <link href="/css/theme.css?1614446274" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1614446274" rel="stylesheet">
+    <link href="/css/nucleus.css?1616521609" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1616521609" rel="stylesheet">
+    <link href="/css/hybrid.css?1616521609" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1616521609" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1616521609" rel="stylesheet">
+    <link href="/css/auto-complete.css?1616521609" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1616521609" rel="stylesheet">
+    <link href="/css/theme.css?1616521609" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1616521609" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1614446274"></script>
+    <script src="/js/jquery-3.3.1.min.js?1616521609"></script>
 
     <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"> </script>
 
@@ -59,14 +59,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1614446274"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1614446274"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1616521609"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1616521609"></script>
 <script type="text/javascript">
     
         var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1614446274"></script>
+<script type="text/javascript" src="/js/search.js?1616521609"></script>
 
     
   </div>
@@ -827,6 +827,32 @@
  
   
     
+    <li data-nav-id="/module4/subsets/" title="Subset Variable Selection" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/module4/subsets/">
+          Subset Variable Selection
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
     <li data-nav-id="/module4/clasification/" title="Clasification" class="dd-item 
         
         
@@ -834,120 +860,6 @@
         ">
       <a href="/module4/clasification/">
           Clasification
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-        
-        </ul>
-              
-    </li>
-  
- 
-
-          
-          
-
-
- 
-  
-    
-    <li data-nav-id="/showcases/" title="Showcases" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/showcases/">
-          <b>6. </b>Showcases
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-      
-        <ul>
-          
-          
-            
-          
-          
-          
-        
-          
-            
-            
-
-
- 
-  
-    
-    <li data-nav-id="/showcases/covid-19/" title="COVID-19" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/showcases/covid-19/">
-          COVID-19
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-    <li data-nav-id="/showcases/airpolution/" title="Air Pollution" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/showcases/airpolution/">
-          Air Pollution
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-    <li data-nav-id="/showcases/tricks_tips/" title="Tricks and Tips" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/showcases/tricks_tips/">
-          Tricks and Tips
           
             <i class="fas fa-check read-icon"></i>
           
@@ -1102,15 +1014,16 @@
 
 
 	
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
 
 
-<p>In the previous section we have learnt about <em>simple linear regression</em> as a very simple tool for predicting quantitative measured response variables. Its simple application, easy interpretation and predictive capabilities make it one of the most popular approaches for supervised learning. Developing good understanding of linear regression serves as a solid base for learning how to use and adopt other more sophisticated modelling procedures in the context of machine learning.</p>
+<p>In the previous section we learnt about <em>simple linear regression</em> as a very simple tool for predicting quantitative measured response variables. Its simple application, easy interpretation and predictive capabilities make it one of the most popular approaches for supervised learning. Developing good understanding of linear regression serves as a solid base for learning how to use and adopt other more sophisticated modelling procedures in the context of machine learning.</p>
 <p>
 <font color="black" face="Verdana, Geneva, sans-serif" size="+1.5"><strong>Additive Model</strong></font>
 </p>
-<p>The basic idea in regression modelling is that there is a phenomenon of interest whose behaviour we seek to account for or explain. For example a company may be interested in why its sales figures have followed a particular pattern; or Government officials may be interested in explaining the behaviour of unemployment statistics.</p>
+<p>The basic idea in regression modelling is that there is a phenomenon of interest whose behaviour we seek to account for or explain. For example a company may be interested in why its sales figures have followed a particular pattern; Government officials may be interested in explaining the behaviour of unemployment statistics.</p>
 <p>Let the phenomenon of interest be denoted by <span class="math inline">\(Y\)</span>; as discussed in the previous sections, <span class="math inline">\(Y\)</span> is also known as the response variable, or the dependent variable. The fundamental nature of <span class="math inline">\(Y\)</span> is that it displays variability and it is this inherent variability that the data analyst seeks to explain by using regression modelling. Intuitively, if we can account for a large amount of the movements in <span class="math inline">\(Y\)</span> then in some sense this is <em>good</em>. Conversely, if we put forward an argument which explains only a very small amount of the behaviour of the phenomenon of interest then in some sense this is <em>bad</em>.</p>
-<p>In trying to explain, or account for the behaviour of <span class="math inline">\(Y\)</span> we often build a regression model. As a first step in building such a model we specify a set of variables, called the explanatory or predictor variables, that we believe to be important in explaining the behaviour of, or the variability in <span class="math inline">\(Y\)</span>. Specifying this set of variables is in effect the first step in developing as the data analysts our viewpoint, our model, our theory. As such we are entitled to ask where such a viewpoint comes from - for example, it may be the logical outcome of some theoretical argument or it may be a replication of a previous study.</p>
+<p>In trying to explain, or account for the behaviour of <span class="math inline">\(Y\)</span> we often build a regression model. As a first step in building such a model we specify a set of variables, called the explanatory or predictor variables, that we believe to be important in explaining the behaviour of, or the variability in <span class="math inline">\(Y\)</span>. Specifying this set of variables is, in effect, the first step in developing as the data analysts our viewpoint, our model, our theory. As such we are entitled to ask where such a viewpoint comes from - for example, it may be the logical outcome of some theoretical argument or it may be a replication of a previous study.</p>
 
 <div class="notices warning" ><p>💡 We do well to remember that this statement of a model is a viewpoint, a belief, a theory and need not be correct, i.e. true.</p>
 </div>
@@ -1190,7 +1103,7 @@ Selecting a sample by definition means that we have imperfect information, that 
 <p><strong>Test b) <span class="math inline">\(R^2 / R^2_{adjusted}\)</span></strong>: Overall is the model a good fit?</p>
 <p>The coefficient of determination, <span class="math inline">\(R^2\)</span>, is a single number that measures the extent to which the set of explanatory variables can explain, or account for, the variability in <span class="math inline">\(Y\)</span>. That is, how well does the set of explanatory variables explain the behaviour of the phenomenon we are trying to understand? It is looking at the set of explanatory variables as a whole and is making no judgement about the contribution or importance of any individual explanatory variable. By construction, <span class="math inline">\(R^2\)</span> is constrained to lie in the following range:</p>
 <p><span class="math display">\[0\%  &lt;---------- \;\; R^2 \;\; ----------&gt;  100\%\]</span></p>
-<p>Intuitively the closer <span class="math inline">\(R^2\)</span> is to <span class="math inline">\(100\%\)</span> then the better is the model is in the sense that the set of explanatory variables can explain a lot of the variability in <span class="math inline">\(Y\)</span>. Conversely, a value of <span class="math inline">\(R^2\)</span> close to <span class="math inline">\(0\)</span> implies a weak, i.e. poor model, in that the set of explanatory variables can only account for a limited amount of the behaviour of <span class="math inline">\(Y\)</span>. But what about non-extreme values of <span class="math inline">\(R^2\)</span>?</p>
+<p>Intuitively the closer <span class="math inline">\(R^2\)</span> is to <span class="math inline">\(100\%\)</span> then the better the model is in the sense that the set of explanatory variables can explain a lot of the variability in <span class="math inline">\(Y\)</span>. Conversely, a value of <span class="math inline">\(R^2\)</span> close to <span class="math inline">\(0\)</span> implies a weak, i.e. poor model, in that the set of explanatory variables can only account for a limited amount of the behaviour of <span class="math inline">\(Y\)</span>. But what about non-extreme values of <span class="math inline">\(R^2\)</span>?</p>
 <p>The adequacy of <span class="math inline">\(R^2\)</span> can be judged both formally and informally.</p>
 <p>The formal test is given by the result:</p>
 <ul>
@@ -1248,7 +1161,7 @@ Selecting a sample by definition means that we have imperfect information, that 
 <p>
 <font color="black" face="Verdana, Geneva, sans-serif" size="+1.5"><strong>Case Study</strong></font>
 </p>
-<p><strong><code>carData::Salaries</code></strong>: The 2008-09 nine-month academic salary for Assistant Professors, Associate Professors and Professors in a college in the U.S. The data were collected as part of the on-going effort of the college’s administration to monitor salary differences between male and female faculty members.</p>
+<p><strong><code>carData::Salaries</code></strong>: The 2008-09 nine-month academic salary for Assistant Professors, Associate Professors and Professors in a college in the U.S. The data was collected as part of the on-going effort of the college’s administration to monitor salary differences between male and female faculty members.</p>
 <p><strong>Format:</strong> A data frame with 397 observations on the following 6 variables:</p>
 <ul>
 <li><code>rank</code>: a factor with levels:
@@ -1271,14 +1184,14 @@ Selecting a sample by definition means that we have imperfect information, that 
 </ul></li>
 <li><code>salary</code>: nine-month salary, in dollars</li>
 </ul>
-<p>First set of questions is:</p>
+<p>The first set of questions is:</p>
 <ul>
 <li>which of the measured variable is the response variable?</li>
 <li>which are the explanatory variables?</li>
 <li>are the explanatory variables measured or attribute, or a mixture of both?</li>
 </ul>
 <p>Considering that the data is collected for the purpose of the analysis of academic salary we are going to identify <code>salary</code> as the response variable. The rest of the variables we can use as possible factors that can influence the behaviour of the response variable.</p>
-<p>“Standard” regression approach assumes modelling a relationship between measured response and measured explanatory variables. However, often when building multiple regression models we do not want to be limited to the choice of only measured explanatory variables. We also want to be able to include attribute explanatory variables in the multiple regression modelling. In consequence, it is important to learn about supplementary steps that are required to make such models interpretable.</p>
+<p>The “Standard” regression approach assumes modelling a relationship between measured response and measured explanatory variables. However, often when building multiple regression models we do not want to be limited to the choice of only measured explanatory variables. We also want to be able to include attribute explanatory variables in the multiple regression modelling. In consequence, it is important to learn about supplementary steps that are required to make such models interpretable.</p>
 <p><strong>Dummy Variables</strong></p>
 <p>As we have learnt previously, attribute variables are vectors of class factor in R. This vector is encoded numerically, with information about the levels of the variable saved in the levels attribute.</p>
 <pre class="r"><code># If you don&#39;t have carData installed yet, uncomment and run the line below
@@ -1303,7 +1216,7 @@ class(sex)</code></pre>
 ## attr(,&quot;levels&quot;)
 ## [1] &quot;Female&quot; &quot;Male&quot;</code></pre>
 <p>Note, that the <code>unclass()</code> function removes the attributes of the <code>sex</code> variable above and prints it using default print method, allowing for easier examination of the internal structure of the object.</p>
-<p>However, when using attribute variable in a linear regression model it would make no sense to treat it as a measured explanatory variable because of its numeric levels. In the context of linear modelling we need to code them to represent the levels of the attribute.</p>
+<p>However, when using an attribute variable in a linear regression model it would make no sense to treat it as a measured explanatory variable because of its numeric levels. In the context of linear modelling we need to code them to represent the levels of the attribute.</p>
 <p>Two-level attribute variables are very easy to code. We simply create an <strong>indicator</strong> or <strong>dummy</strong> variable that takes on two possible <em>dummy</em> numerical values. Consider the <code>sex</code> indicator variable. We can code this using a dummy variable <span class="math inline">\(d\)</span>:
 <span class="math display">\[\begin{equation}
   d=\left\{
@@ -1327,7 +1240,7 @@ class(sex)</code></pre>
   \end{array}\right.
 \end{equation}\]</span></p>
 <p>where <span class="math inline">\(b_0\)</span> can be interpreted as the average <span class="math inline">\(\text{salary}\)</span> for females, and <span class="math inline">\(b_0 + b_1\)</span> as the average <span class="math inline">\(\text{salary}\)</span> for males. The value of <span class="math inline">\(b_1\)</span> represents the average difference in <span class="math inline">\(\text{salary}\)</span> between females and males.</p>
-<p>We can conclude that dealing with an attribute variable with two levels in a linear model is straight forward. In this case, a dummy variable indicates whether an observation has a particular characteristic: yes/no. We can observe it as a “switch” in a model, as this dummy variable can only assume the values 0 and 1, where 0 indicates the absence of the effect, and 1 indicates the presence. The values 0/1 can be seen as off/on.</p>
+<p>We can conclude that dealing with an attribute variable with two levels in a linear model is straightforward. In this case, a dummy variable indicates whether an observation has a particular characteristic: yes/no. We can observe it as a “switch” in a model, as this dummy variable can only assume the values 0 and 1, where 0 indicates the absence of the effect, and 1 indicates the presence. The values 0/1 can be seen as off/on.</p>
 <p>The way in which R codes dummy variables is controlled by the <em><strong>contrast</strong></em> option:</p>
 <pre class="r"><code>options(&quot;contrasts&quot;)</code></pre>
 <pre><code>## $contrasts
@@ -1437,9 +1350,9 @@ lm(salary ~  sex)</code></pre>
 </ul>
 <p>Generally, in multiple regression we have a continuous response variable and two or more continuous explanatory variables, however in this dataset we have three attribute variables that we wish to include as the explanatory variables in the model.</p>
 <p>Next, we need to specify the model that embodies our mechanistic understanding of the
-factors involved and the way that they are related to the response variable. It would make sense to expect that all of the available <span class="math inline">\(x\)</span> variables may impact the behaviour of <span class="math inline">\(y\)</span>, thus the model we wish to built should reflect our view point, i.e. <span class="math inline">\(y = f(x_1, x_2, x_3, x_4, x_5)\)</span>:</p>
+factors involved and the way that they are related to the response variable. It would make sense to expect that all of the available <span class="math inline">\(x\)</span> variables may impact the behaviour of <span class="math inline">\(y\)</span>, thus the model we wish to build should reflect our viewpoint, i.e. <span class="math inline">\(y = f(x_1, x_2, x_3, x_4, x_5)\)</span>:</p>
 <p><span class="math display">\[y = b_0 + b_1x_1 + b_2x_2 + b_3x_3 + b_4x_4 + b_5x_5 + e\]</span>
-Our view point states a belief that all explanatory variables have positive impact on the response. For example, more years in service will cause higher salary.</p>
+Our viewpoint states a belief that all explanatory variables have positive impact on the response. For example, more years in service will cause higher salary.</p>
 <p>Our objective now is to determine the values of the parameters in the model that lead to <strong>the best fit of the model to the data</strong>. That is, we are not only trying to estimate the parameters of the model, but we are also seeking the minimal adequate model to describe the data.</p>
 
 <div class="notices tip" ><p>The best model is the model that produces the least unexplained variation following the principle of parsimony rather than complexity. That is the model should have as few parameters as possible, subject to the constraint that the parameters in the model should all be statistically significant.</p>
@@ -1614,9 +1527,9 @@ y = b_0 + b_1dr_2 + b_2dr_3 + b_3d_1 + b_4x_1 + b_5x_2 + e,
 <ul>
 <li>For every year since PhD (<code>yrs.since.phd</code>) on average salary (<code>salary</code>) will go up by <span class="math inline">\(\$534.63\)</span> assuming the rest of the variables are fixed in the model</li>
 <li>For every year in service (<code>yrs.service</code>) on average salary (<code>salary</code>) will go down by <span class="math inline">\(\$476.72\)</span> assuming the rest of the variables are fixed in the model</li>
-<li>Average salary of an Assistant Professor (<code>rank: AsstProf</code>) who works in a “theoretical” department is <span class="math inline">\(\$69,869.01\)</span> and who works in an “applied” department is <span class="math inline">\(\$84,374.16\)</span>; This can vary for the number of years in service and since PhD</li>
-<li>Average salary of an Associate Professor (<code>rank: AssocProf</code>) who works in a “theoretical” department is <span class="math inline">\(\$82,700.55\)</span> and who works in an “applied” department is <span class="math inline">\(\$97,205.70\)</span>; This can vary for the number of years in service and since PhD</li>
-<li>Average salary of a Professor (<code>rank: Prof</code>) who works in a “theoretical” department is <span class="math inline">\(\$115,156.70\)</span> and who works in an “applied” department is <span class="math inline">\(\$129,661.90\)</span>; This can vary for the number of years in service and since PhD</li>
+<li>Average salary of an Assistant Professor (<code>rank: AsstProf</code>) who works in a “theoretical” department is <span class="math inline">\(\$69,869.01\)</span> and who works in an “applied” department is <span class="math inline">\(\$84,374.16\)</span>; this can vary for the number of years in service and since PhD</li>
+<li>Average salary of an Associate Professor (<code>rank: AssocProf</code>) who works in a “theoretical” department is <span class="math inline">\(\$82,700.55\)</span> and who works in an “applied” department is <span class="math inline">\(\$97,205.70\)</span>; this can vary for the number of years in service and since PhD</li>
+<li>Average salary of a Professor (<code>rank: Prof</code>) who works in a “theoretical” department is <span class="math inline">\(\$115,156.70\)</span> and who works in an “applied” department is <span class="math inline">\(\$129,661.90\)</span>; this can vary for the number of years in service and since PhD</li>
 </ul>
 <p>This model explains around <span class="math inline">\(45\%\)</span> of the variability in the response variable <code>salary</code>.</p>
 <p>Adding <code>~ 0</code> to <code>lm()</code> formula enables <code>R</code> to suppress the intercept. Note that if we remove the intercept, then we can directly obtain all “three intercepts” without a base level to fit the final fitted model:</p>
@@ -1648,8 +1561,8 @@ summary(model_2_1)</code></pre>
 <p>
 <font color="black" face="Verdana, Geneva, sans-serif" size="+1.5"><strong>Adding a Complexity</strong></font>
 </p>
-<p>So far we have seen that by fitting an additive regression model to the data, we aim to identify and understand how the value of a dependent response variable changes when any one of the independent explanatory variables is changed while the other independent variables stay the same. This is a restrictive form of a model as it only allows for linear relationships between the response and the explanatory variables and the way in which one explanatory variable affects the response is the same for any value of the other explanatory variables used in the model.</p>
-<p>We need to add flexibility to accommodate those limitations. That will allow the use of linear models for <strong>non-linear relationships</strong> and in which the effect of one explanatory variable can be different for different values of the other explanatory variable by introducing the concept of <strong>interaction</strong>. This bring more complexity into the multivariate regression model.</p>
+<p>So far we have seen that by fitting an additive regression model to the data, we aim to identify and understand how the value of a dependent response variable changes when any one of the independent explanatory variables is changed while the other independent variables stay the same. This is a restrictive form of a model as it only allows for linear relationships between the response and the explanatory variables, and the way in which one explanatory variable affects the response is the same for any value of the other explanatory variables used in the model.</p>
+<p>We need to add flexibility to accommodate these limitations. This will allow the use of linear models for <strong>non-linear relationships</strong> and in which the effect of one explanatory variable can be different for different values of the other explanatory variable by introducing the concept of <strong>interaction</strong>. This brings more complexity into the multivariate regression model.</p>
 <p>
 <font color="black" face="Verdana, Geneva, sans-serif" size="+1.5"><strong>Case Study: The Quality of red Bordeaux Vintages</strong></font>
 </p>
@@ -1839,7 +1752,7 @@ summary(model5)</code></pre>
 appropriate) through a series of simplifications to the minimal adequate model. This progression is made on the basis of deletion tests: F tests, AIC, t-tests or chi-squared tests that assess the significance of the increase in deviance that results when a given term is removed from the
 current model.</p>
 <p>The <em>best subset</em> regression (<em>BREG</em>), also known as “all possible regressions”, as the name of the procedure indicates, fits a separate least squares regression for each possible combination of the <span class="math inline">\(p\)</span> predictors, i.e. explanatory variables. After fitting all of the models, BREG then displays the best fitted models with one explanatory variable, two explanatory variables, three explanatory variables, and so on. Usually, either adjusted R-squared or Mallows Cp is the criterion for picking the best fitting models for this process. The result is a display of the best fitted models of different sizes up to the full/maximal model and the final fitted model can be selected by comparing displayed models based on the criteria of parsimony.</p>
-<p>“These methods frequently are abused by naive researchers who seek to interpret the order of
+<p>“These methods are frequently are abused by naive researchers who seek to interpret the order of
 entry of variables into the regression equation as an index of their ‘‘importance.’’ This practice
 is potentially misleading.” <a href="https://socialsciences.mcmaster.ca/jfox/Books/Companion/">J. Fox and S. Weisberg book: An R Companion to Applied Regression, Third Edition, Sage (2019)</a></p>
 
@@ -1870,9 +1783,6 @@ is potentially misleading.” <a href="https://socialsciences.mcmaster.ca/jfox/B
 <font color="black" face="Verdana, Geneva, sans-serif" size="+1.5"><strong>Summary</strong></font>
 </p>
 <p>For problems ranging from bioinformatics to marketing, many analysts prefer to develop “classifiers” instead of developing predictive models</p>
-<p>Data to practice:</p>
-<p><a href="https://www.kdnuggets.com/datasets/index.html" class="uri">https://www.kdnuggets.com/datasets/index.html</a></p>
-<p><a href="http://archive.ics.uci.edu/ml/index.php" class="uri">http://archive.ics.uci.edu/ml/index.php</a></p>
 <hr />
 <p><strong>Further Reading</strong></p>
 <p>Claeskens, G. and Hjort, N.L. (2008) Model Selection and Model Averaging, Cambridge University
@@ -1919,10 +1829,7 @@ summary(model_2_1)</code></pre>
 <ul>
 <li>Select the best subset model to predict <code>lpsa</code> using all the available predictors.</li>
 </ul>
-<p>Take a look at [vignette for the <code>lasso2</code> package](<a href="https://cran.r-project.org/web/packages/lasso2/vignettes/Manual-vignette.pdf" class="uri">https://cran.r-project.org/web/packages/lasso2/vignettes/Manual-vignette.pdf</a></p>
-<p><a href="https://www.theguardian.com/data" class="uri">https://www.theguardian.com/data</a></p>
-<p><a href="https://data.cdrc.ac.uk/search/field_tags/tutorial-1679/type/dataset?sort_by=changed" class="uri">https://data.cdrc.ac.uk/search/field_tags/tutorial-1679/type/dataset?sort_by=changed</a></p>
-<p><a href="https://data.cdrc.ac.uk/dataset/introduction-spatial-data-analysis-and-visualisation-r" class="uri">https://data.cdrc.ac.uk/dataset/introduction-spatial-data-analysis-and-visualisation-r</a></p>
+<p>Take a look at <a href="https://cran.r-project.org/web/packages/lasso2/vignettes/Manual-vignette.pdf">vignette for the <code>lasso2</code> package</a></p>
 <hr />
 <p>© 2021 Tatjana Kecojevic</p>
 
@@ -2426,56 +2333,6 @@ summary(model_2_1)</code></pre>
             
         
                     
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
             
             
@@ -2507,7 +2364,7 @@ summary(model_2_1)</code></pre>
 			<a class="nav nav-prev" href="/module4/resampling/" title="Resampling"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/module4/clasification/" title="Clasification" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/module4/subsets/" title="Subset Variable Selection" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -2517,19 +2374,19 @@ summary(model_2_1)</code></pre>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1614446274"></script>
-    <script src="/js/perfect-scrollbar.min.js?1614446274"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1614446274"></script>
-    <script src="/js/jquery.sticky.js?1614446274"></script>
-    <script src="/js/featherlight.min.js?1614446274"></script>
-    <script src="/js/highlight.pack.js?1614446274"></script>
+    <script src="/js/clipboard.min.js?1616521609"></script>
+    <script src="/js/perfect-scrollbar.min.js?1616521609"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1616521609"></script>
+    <script src="/js/jquery.sticky.js?1616521609"></script>
+    <script src="/js/featherlight.min.js?1616521609"></script>
+    <script src="/js/highlight.pack.js?1616521609"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1614446274"></script>
-    <script src="/js/learn.js?1614446274"></script>
-    <script src="/js/hugo-learn.js?1614446274"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1616521609"></script>
+    <script src="/js/learn.js?1616521609"></script>
+    <script src="/js/hugo-learn.js?1616521609"></script>
 
-    <link href="/mermaid/mermaid.css?1614446274" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1614446274"></script>
+    <link href="/mermaid/mermaid.css?1616521609" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1616521609"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
