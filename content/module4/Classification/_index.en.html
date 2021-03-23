@@ -1,6 +1,6 @@
 ---
 date: "2016-04-09T16:50:16+02:00"
-title: Clasification
+title: Classification
 output: 
   learnr::tutorial
 weight: 5
@@ -63,7 +63,7 @@ library(ggplot2)
 ggplot(animals_data, aes(x = A, y = B)) +
   geom_point(aes(col = animal), shape = 20, size = 3) +
   geom_point(x = 39, y = 20, shape = 13, size = 7) +
-  labs (title= &quot;Cat &amp; Dogs&quot;,
+  labs (title= &quot;Cats &amp; Dogs&quot;,
         x = &quot;length&quot;, y = &quot;height&quot;) +
   theme_minimal() +
   theme(legend.position = &quot;bottom&quot;, 
@@ -72,7 +72,7 @@ ggplot(animals_data, aes(x = A, y = B)) +
                                     size = .75),
         plot.title=element_text(hjust=0.5)) +
   scale_colour_brewer(palette = &quot;Set1&quot;) </code></pre>
-<p><img src="/module4/Clasification/_index.en_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p><img src="/module4/Classification/_index.en_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
 <p>We can see that the new animal with 20cm of height and 39cm of length is in proximity with cats more than dogs. Hence, we predict that the new animal is a cat. However, in most cases we will deal with situations in which categories will be defined by many more attributes that will prevent us from simply drawing them on a scatter diagram like we did in this example.</p>
 <p>The more arguments describing the categories we have greater chance of appropriate prediction there is. For example if we get two more measurements to consider:</p>
 <ul>
@@ -292,7 +292,7 @@ pingo %&gt;%
        caption = &quot;Visualisation: https://www.r-bloggers.com/2020/06/penguins-dataset-overview-iris-alternative-in-r&quot;,
        y = &quot;variables&quot;) +
   theme(plot.title = element_text(hjust = 0.5))</code></pre>
-<p><img src="/module4/Clasification/_index.en_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+<p><img src="/module4/Classification/_index.en_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
 <pre class="r"><code>data_class &lt;- pingo %&gt;% 
   drop_na()</code></pre>
 <p>Next, we need to prepare data further for our k-NN classification. First, we will put our outcome variable <code>species</code> into its own object and remove it from the data set.</p>
@@ -456,7 +456,7 @@ pingo_knn_caret</code></pre>
 ## The final value used for the model was k = 7.</code></pre>
 <p>Looking at the output of the <code>caret</code> package KNN model, we can see that it chose <code>K = 7</code>, given that this was the number at which accuracy and kappa peaked. Kappa statistic is a measure of inter-rater reliability which is a more robust measure than a simple percent agreement calculation. However, its interpretation is not as intuitive and easy to comprehend as a single percentage measure. For more on the kappa statistic see the <a href="https://www.statisticshowto.com/cohens-kappa-statistic/">Statistic How To</a> website.</p>
 <pre class="r"><code>plot(pingo_knn_caret)</code></pre>
-<p><img src="/module4/Clasification/_index.en_files/figure-html/unnamed-chunk-19-1.png" width="672" /></p>
+<p><img src="/module4/Classification/_index.en_files/figure-html/unnamed-chunk-19-1.png" width="672" /></p>
 <p>Next, we compare our predicted values of <code>species</code> to our actual values. We also print the confusion matrix, which will give an indication of how well our model has predicted the actual values. In the <code>caret</code> package the confusion matrix output also shows overall model statistics and statistics by class.</p>
 <p>We can see that we have obtained the same results as previously. Do you have any suggestions why that may be?</p>
 <pre class="r"><code>knn_predict &lt;- predict(pingo_knn_caret, newdata = class_pred_test) 
@@ -544,7 +544,7 @@ abline(h = 0, lty = 3)
 abline(h = 1, lty = 3)
 abline(h = 0.5, lty = 2)
 abline(model_lm, lwd = 3, col = &quot;navy&quot;)</code></pre>
-<p><img src="/module4/Clasification/_index.en_files/figure-html/unnamed-chunk-22-1.png" width="672" /></p>
+<p><img src="/module4/Classification/_index.en_files/figure-html/unnamed-chunk-22-1.png" width="672" /></p>
 <p>Examining this plot we can make two obvious observations:</p>
 <ol style="list-style-type: decimal">
 <li><p>the higher the ration of RE/TA the better the chances is for the firm to be solvent</p></li>
@@ -561,7 +561,7 @@ abline(model_lm, lwd = 3, col = &quot;navy&quot;)</code></pre>
 <li>the assumption of equal/constant variance (homoscedasticity) dos not hold</li>
 </ul>
 <p>A workaround these issues is to fit a different model, one that is bounded by the minimum and maximum probabilities. It makes better sense to model the probabilities on a transformed scale and this is what is done in logistic regression analysis. The relationship between the probability <span class="math inline">\(p\)</span> and <span class="math inline">\(X\)</span> can be presented by a <strong>logistic regression function</strong>.</p>
-<p><img src="/module4/Clasification/_index.en_files/figure-html/unnamed-chunk-24-1.png" width="672" /></p>
+<p><img src="/module4/Classification/_index.en_files/figure-html/unnamed-chunk-24-1.png" width="672" /></p>
 <p>The shape of the S-curve given in the figure above can be reproduced if we model the probabilities as follows</p>
 <p><span class="math display">\[p = P(Y = 1 | X = x) = \frac{e^{\beta_0 + \beta_1x}}{1 + e^{\beta_0 + \beta_1x}},\]</span></p>
 <p>where <span class="math inline">\(e\)</span> is the base of the natural logarithm. The logistic model can be generalized directly to the situation where we have several predictor variables. The probability <span class="math inline">\(p\)</span> is modelled as</p>
@@ -1099,7 +1099,7 @@ cm</code></pre>
 <p>The accuracy of the model measured when using the unseen test data is 86%. That is, out of 329 observations in the test subset the model has correctly classified them 284 times. There is a scope for improvement. We have eleven predictors in this model and it would be useful to find out how well they contribute to the model’s performance. To assess the relative importance of individual predictors in the model using the <code>caret</code> package we can utilise the <code>varImp()</code> function.</p>
 <pre class="r"><code>glm_Imp &lt;- varImp(credit_glm_mod)
 plot(glm_Imp)</code></pre>
-<p><img src="/module4/Clasification/_index.en_files/figure-html/unnamed-chunk-48-1.png" width="672" /></p>
+<p><img src="/module4/Classification/_index.en_files/figure-html/unnamed-chunk-48-1.png" width="672" /></p>
 <p>The function automatically scales the importance scores to be between 0 and 100. Using <code>scale = FALSE</code> this normalization step can be avoided.</p>
 <p>Unfortunately, since logistic regression has no tuning parameters we can not take advantage of the <code>caret</code>’s feature selection facility (see <a href="https://r-forge.r-project.org/scm/viewvc.php/*checkout*/pkg/caret/inst/doc/caretSelection.pdf?revision=77&amp;root=caret&amp;pathrev=90">Variable Selection Using The caret Package</a>).</p>
 <p>We will simple retrain the model removing <code>age</code> from the list of predictors. To ensure that each training gets the same data partitions and repeats we need to use the same seed number.</p>
@@ -1161,7 +1161,7 @@ credit_glm_mod_1</code></pre>
 <p>Examining the output we can see that the accuracy has increased.</p>
 <pre class="r"><code>glm_Imp_1 &lt;- varImp(credit_glm_mod_1)
 plot(glm_Imp_1)</code></pre>
-<p><img src="/module4/Clasification/_index.en_files/figure-html/unnamed-chunk-50-1.png" width="672" /></p>
+<p><img src="/module4/Classification/_index.en_files/figure-html/unnamed-chunk-50-1.png" width="672" /></p>
 <p>The plot above indicates that predictor <code>months</code> has the lowest impact on the overall model performance.</p>
 <p>To compare accuracy between the models we can resample the results of the trained models and compare their accuracy distributions using <code>caret</code>’s <code>resample</code> function and visualise them with the <code>dplot()</code> function. Although logistic regression has no tuning parameters, resampling can still be used to characterise the performance of the model.</p>
 <pre class="r"><code>set.seed(123) # same resampling specification is used and, since the same random number seed is set
@@ -1190,7 +1190,7 @@ summary(results)</code></pre>
 ## M0 0.5617898 0.5781585 0.5809996 0.6583304 0.6141825 0.9565217    0
 ## M1 0.5082604 0.6190476 0.6999139 0.7319730 0.9017161 0.9309268    0</code></pre>
 <pre class="r"><code>dotplot(results)</code></pre>
-<p><img src="/module4/Clasification/_index.en_files/figure-html/unnamed-chunk-51-1.png" width="672" /></p>
+<p><img src="/module4/Classification/_index.en_files/figure-html/unnamed-chunk-51-1.png" width="672" /></p>
 <p>However, if a strong claim needs to be made about which model is better, we could use statistical hypothesis tests to statistically check if the differences in the results are significant.</p>
 <pre class="r"><code>modelDifferences &lt;- diff(results)
 summary(modelDifferences)</code></pre>
