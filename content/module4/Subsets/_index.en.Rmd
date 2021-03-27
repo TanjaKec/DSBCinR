@@ -268,7 +268,7 @@ We now compute the validation set error for the best model of each model size. W
 
 <span style="color: gray">
 
-In the multiple regression setting because of the potentially large number of predictors, it is more convenient to write the expressions using matrix notation. To develop the analogy let us quickly look at the matrix notation for the 14-variable linear regression function:
+In the multiple regression setting because of the potentially large number of predictors, it is more convenient to write the expressions using matrix notation. To develop the analogy let us quickly look at the matrix notation for the one variable linear regression function:
 
 <span style="color: gray">$$y_i = \beta_0 + \beta_1x_1 + \epsilon_i \;\;\;\;\;\; \text{for} \;\; i=1, 2, ...n$$
 <span style="color: gray">If we actually let $i = 1, ..., n$, we see that we obtain $n$ equations:
