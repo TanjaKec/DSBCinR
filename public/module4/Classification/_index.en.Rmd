@@ -831,7 +831,7 @@ glm_Imp <- varImp(credit_glm_mod)
 plot(glm_Imp)
 ```
 
-The function automatically scales the importance scores to be between 0 and 100. Using `scale = FALSE` this normalization step can be avoided.
+The function automatically scales the importance scores to be between 0 and 100. Using `scale = FALSE` this normalisation step can be avoided.
 
 Unfortunately, since logistic regression has no tuning parameters we can not take advantage of the `caret`'s feature selection facility (see [Variable Selection Using The caret Package](https://r-forge.r-project.org/scm/viewvc.php/*checkout*/pkg/caret/inst/doc/caretSelection.pdf?revision=77&root=caret&pathrev=90)). 
 
