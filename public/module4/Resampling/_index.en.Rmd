@@ -7,7 +7,7 @@ weight: 2
 ---
 
 
-We use resampling techniques for estimating model performance. In the previous section we presented the idea of fitting a model on a subset of data, known as tanning data and using the remaining sample, better known as test data, to assess the efficiency of the model. Often, this process is repeated multiple times and the results are aggregated and summarized. Hence, resampling method involves repeatedly drawing samples from a training data set and refitting a model to obtain addition information about that model. 
+We use resampling techniques for estimating model performance. We can fit a model on a subset of data, known as **tanning data** and using the remaining sample, better known as **test data**, we can assess the efficiency of the model. Often, this process is repeated multiple times and the results are aggregated and summarized. Hence, resampling method involves repeatedly drawing samples from a training data set and refitting a model to obtain addition information about that model. 
 
 Resampling methods involve fitting the same statistical method multiple times using different subsets of the training data that can be computationally taxing. Fortunately, computing power has greatly advanced in the last few decades allowing for resampling techniques to become an indispensable tool of a statistical modelling procedure. 
 
