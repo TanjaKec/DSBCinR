@@ -49,6 +49,8 @@ Using the `glimpse()` function allows us to notice that all the variables in our
 Let us take a look at the data using the `DT` package, which provides an R interface to the JavaScript library `DataTables`. It will enable us to filter through the displayed data and quickly check for `NA`s to see if there are any missing values that should be of concern. 
 
 ```{r}
+#If you don't have the "DT" package installed yet, uncomment and run the line below
+#install.packages("DT")
 DT::datatable(fat)
 ```
 
