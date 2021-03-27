@@ -774,68 +774,10 @@ class(stepwb)</code></pre>
 </ul>
 <p>Using the 10-fold cross-validation we have estimated average prediction error (<code>RMSE</code>) for each of the 14 best models for the given number of variables. The <code>RMSE</code> statistical metric is used to compare the 14 selected models and to automatically choose the model that minimises the <code>RMSE</code> as the best model. It can be seen that the model with 8 variables (<code>nvmax</code> = 8) is the one that has the lowest <code>RMSE</code>. We can call <code>bestTune</code> from the created <code>stepwb</code> object of class <code>train</code> to directly display the “best tuning values” (<code>nvmax</code>) and <code>finalModel</code> to see selected variables of the best model.</p>
 <pre class="r"><code># Final model coefficients
-stepwb$finalModel</code></pre>
-<pre><code>## Subset selection object
-## 14 Variables  (and intercept)
-##         Forced in Forced out
-## age         FALSE      FALSE
-## weight      FALSE      FALSE
-## height      FALSE      FALSE
-## adipos      FALSE      FALSE
-## neck        FALSE      FALSE
-## chest       FALSE      FALSE
-## abdom       FALSE      FALSE
-## hip         FALSE      FALSE
-## thigh       FALSE      FALSE
-## knee        FALSE      FALSE
-## ankle       FALSE      FALSE
-## biceps      FALSE      FALSE
-## forearm     FALSE      FALSE
-## wrist       FALSE      FALSE
-## 1 subsets of each size up to 8
-## Selection Algorithm: backward</code></pre>
-<pre class="r"><code># Summary of the model
-stepwb$bestTune</code></pre>
-<pre><code>##   nvmax
-## 8     8</code></pre>
-<pre class="r"><code>summary(stepwb$finalModel)</code></pre>
-<pre><code>## Subset selection object
-## 14 Variables  (and intercept)
-##         Forced in Forced out
-## age         FALSE      FALSE
-## weight      FALSE      FALSE
-## height      FALSE      FALSE
-## adipos      FALSE      FALSE
-## neck        FALSE      FALSE
-## chest       FALSE      FALSE
-## abdom       FALSE      FALSE
-## hip         FALSE      FALSE
-## thigh       FALSE      FALSE
-## knee        FALSE      FALSE
-## ankle       FALSE      FALSE
-## biceps      FALSE      FALSE
-## forearm     FALSE      FALSE
-## wrist       FALSE      FALSE
-## 1 subsets of each size up to 8
-## Selection Algorithm: backward
-##          age weight height adipos neck chest abdom hip thigh knee ankle biceps
-## 1  ( 1 ) &quot; &quot; &quot; &quot;    &quot; &quot;    &quot; &quot;    &quot; &quot;  &quot; &quot;   &quot;*&quot;   &quot; &quot; &quot; &quot;   &quot; &quot;  &quot; &quot;   &quot; &quot;   
-## 2  ( 1 ) &quot; &quot; &quot;*&quot;    &quot; &quot;    &quot; &quot;    &quot; &quot;  &quot; &quot;   &quot;*&quot;   &quot; &quot; &quot; &quot;   &quot; &quot;  &quot; &quot;   &quot; &quot;   
-## 3  ( 1 ) &quot; &quot; &quot;*&quot;    &quot; &quot;    &quot; &quot;    &quot; &quot;  &quot; &quot;   &quot;*&quot;   &quot; &quot; &quot; &quot;   &quot; &quot;  &quot; &quot;   &quot; &quot;   
-## 4  ( 1 ) &quot; &quot; &quot;*&quot;    &quot; &quot;    &quot; &quot;    &quot; &quot;  &quot; &quot;   &quot;*&quot;   &quot; &quot; &quot; &quot;   &quot; &quot;  &quot; &quot;   &quot; &quot;   
-## 5  ( 1 ) &quot;*&quot; &quot;*&quot;    &quot; &quot;    &quot; &quot;    &quot; &quot;  &quot; &quot;   &quot;*&quot;   &quot; &quot; &quot; &quot;   &quot; &quot;  &quot; &quot;   &quot; &quot;   
-## 6  ( 1 ) &quot;*&quot; &quot;*&quot;    &quot; &quot;    &quot; &quot;    &quot; &quot;  &quot; &quot;   &quot;*&quot;   &quot; &quot; &quot;*&quot;   &quot; &quot;  &quot; &quot;   &quot; &quot;   
-## 7  ( 1 ) &quot;*&quot; &quot;*&quot;    &quot; &quot;    &quot; &quot;    &quot;*&quot;  &quot; &quot;   &quot;*&quot;   &quot; &quot; &quot;*&quot;   &quot; &quot;  &quot; &quot;   &quot; &quot;   
-## 8  ( 1 ) &quot;*&quot; &quot;*&quot;    &quot; &quot;    &quot; &quot;    &quot;*&quot;  &quot; &quot;   &quot;*&quot;   &quot;*&quot; &quot;*&quot;   &quot; &quot;  &quot; &quot;   &quot; &quot;   
-##          forearm wrist
-## 1  ( 1 ) &quot; &quot;     &quot; &quot;  
-## 2  ( 1 ) &quot; &quot;     &quot; &quot;  
-## 3  ( 1 ) &quot; &quot;     &quot;*&quot;  
-## 4  ( 1 ) &quot;*&quot;     &quot;*&quot;  
-## 5  ( 1 ) &quot;*&quot;     &quot;*&quot;  
-## 6  ( 1 ) &quot;*&quot;     &quot;*&quot;  
-## 7  ( 1 ) &quot;*&quot;     &quot;*&quot;  
-## 8  ( 1 ) &quot;*&quot;     &quot;*&quot;</code></pre>
+#stepwb$finalModel
+# Summary of the model
+#stepwb$bestTune
+#summary(stepwb$finalModel)</code></pre>
 <p>💡Typing <code>?caret::train</code> inside R’s console will bring a more detailed explanation on how to use the <code>train()</code> function and information about the expected outcomes.</p>
 <p>
 <font color="black" face="Verdana, Geneva, sans-serif" size="+1.5"><strong>Summary</strong></font>

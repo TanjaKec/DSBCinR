@@ -419,10 +419,10 @@ Using the 10-fold cross-validation we have estimated average prediction error (`
 
 ```{r}
 # Final model coefficients
-stepwb$finalModel
+#stepwb$finalModel
 # Summary of the model
-stepwb$bestTune
-summary(stepwb$finalModel)
+#stepwb$bestTune
+#summary(stepwb$finalModel)
 ```
 
 💡Typing ```?caret::train``` inside R's console will bring a more detailed explanation on how to use the `train()` function and information about the expected outcomes.
