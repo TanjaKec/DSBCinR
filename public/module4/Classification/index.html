@@ -12,18 +12,18 @@
     <title>Classification :: DS Bootcamp in R</title>
 
     
-    <link href="/css/nucleus.css?1616834157" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1616834157" rel="stylesheet">
-    <link href="/css/hybrid.css?1616834157" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1616834157" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1616834157" rel="stylesheet">
-    <link href="/css/auto-complete.css?1616834157" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1616834157" rel="stylesheet">
-    <link href="/css/theme.css?1616834157" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1616834157" rel="stylesheet">
+    <link href="/css/nucleus.css?1619706859" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1619706859" rel="stylesheet">
+    <link href="/css/hybrid.css?1619706859" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1619706859" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1619706859" rel="stylesheet">
+    <link href="/css/auto-complete.css?1619706859" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1619706859" rel="stylesheet">
+    <link href="/css/theme.css?1619706859" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1619706859" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1616834157"></script>
+    <script src="/js/jquery-3.3.1.min.js?1619706859"></script>
 
     <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"> </script>
 
@@ -59,14 +59,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1616834157"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1616834157"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1619706859"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1619706859"></script>
 <script type="text/javascript">
     
         var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1616834157"></script>
+<script type="text/javascript" src="/js/search.js?1619706859"></script>
 
     
   </div>
@@ -1725,7 +1725,7 @@ Remember that here instead of predicting <span class="math inline">\(Y\)</span> 
 <p>Before we calculate the <span class="math inline">\(G\)</span> statistic we need to specify the hypotheses:</p>
 <ul>
 <li><span class="math inline">\(H_0: \beta_i = 0\)</span></li>
-<li><span class="math inline">\(H_1: \text{at least one is different from }0\)</span></li>
+<li><span class="math inline">\(H_1: \text{at least one is different from}0\)</span></li>
 </ul>
 <p>where <span class="math inline">\(i = 1, 2, 3\)</span>. The decision rule is:</p>
 <ul>
@@ -1749,7 +1749,7 @@ pscl::pR2(model)</code></pre>
 <p>In linear regression we assessed the significance of individual regression coefficients, i.e. the contribution of the individual variables using the <em>t-test</em>. Here, we use the <em>z scores</em> to conduct the equivalent Wald statistic (test). The ratio of the logistic regression has a normal distribution as opposed to the t-distribution we have seen in linear regression. Nonetheless, the set of hypotheses we wish to test is the same:</p>
 <ul>
 <li><span class="math inline">\(H_0: \beta_i = 0\)</span> (coefficient <span class="math inline">\(i\)</span> is not significant, thus <span class="math inline">\(X_i\)</span> is not important)</li>
-<li><span class="math inline">\(H_1: \beta_i &gt; 0\)</span> (coefficient <span class="math inline">\(i\)</span> is significant, thus <span class="math inline">\(X_i\)</span> is important)</li>
+<li><span class="math inline">\(H_1: \beta_i \neq 0\)</span> (coefficient <span class="math inline">\(i\)</span> is significant, thus <span class="math inline">\(X_i\)</span> is important)</li>
 </ul>
 <p>We are going to use a simplistic approach in testing these hypotheses in terms of the adopted decision rule. Decision Rule: If the Wald’s z statistic lies between -2 and +2, then the financial ratio, <span class="math inline">\(X_i\)</span>, is not needed and can be dropped from the analysis. Otherwise, we will keep the financial ratio. However, there is some scope here for subjective judgement depending upon how near to +/-2 theWald’s <span class="math inline">\(z\)</span> value is. Therefore we may have to do some “manual” searching upon an acceptable set of explanatory variables, as the z value of all three variables in the model lies between +/-2.</p>
 <p>In our example none of the variables appear to be important judging upon their Wald’s z statstic, yet based on the chi-square statistic <span class="math inline">\(G\)</span>, we know that the fitted model is valid and that the selected variables collectively contribute in explaining the logits.</p>
@@ -2791,19 +2791,19 @@ summary(modelDifferences)</code></pre>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1616834157"></script>
-    <script src="/js/perfect-scrollbar.min.js?1616834157"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1616834157"></script>
-    <script src="/js/jquery.sticky.js?1616834157"></script>
-    <script src="/js/featherlight.min.js?1616834157"></script>
-    <script src="/js/highlight.pack.js?1616834157"></script>
+    <script src="/js/clipboard.min.js?1619706859"></script>
+    <script src="/js/perfect-scrollbar.min.js?1619706859"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1619706859"></script>
+    <script src="/js/jquery.sticky.js?1619706859"></script>
+    <script src="/js/featherlight.min.js?1619706859"></script>
+    <script src="/js/highlight.pack.js?1619706859"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1616834157"></script>
-    <script src="/js/learn.js?1616834157"></script>
-    <script src="/js/hugo-learn.js?1616834157"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1619706859"></script>
+    <script src="/js/learn.js?1619706859"></script>
+    <script src="/js/hugo-learn.js?1619706859"></script>
 
-    <link href="/mermaid/mermaid.css?1616834157" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1616834157"></script>
+    <link href="/mermaid/mermaid.css?1619706859" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1619706859"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

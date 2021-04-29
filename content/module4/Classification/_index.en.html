@@ -717,7 +717,7 @@ Remember that here instead of predicting <span class="math inline">\(Y\)</span> 
 <p>Before we calculate the <span class="math inline">\(G\)</span> statistic we need to specify the hypotheses:</p>
 <ul>
 <li><span class="math inline">\(H_0: \beta_i = 0\)</span></li>
-<li><span class="math inline">\(H_1: \text{at least one is different from }0\)</span></li>
+<li><span class="math inline">\(H_1: \text{at least one is different from}0\)</span></li>
 </ul>
 <p>where <span class="math inline">\(i = 1, 2, 3\)</span>. The decision rule is:</p>
 <ul>
@@ -741,7 +741,7 @@ pscl::pR2(model)</code></pre>
 <p>In linear regression we assessed the significance of individual regression coefficients, i.e. the contribution of the individual variables using the <em>t-test</em>. Here, we use the <em>z scores</em> to conduct the equivalent Wald statistic (test). The ratio of the logistic regression has a normal distribution as opposed to the t-distribution we have seen in linear regression. Nonetheless, the set of hypotheses we wish to test is the same:</p>
 <ul>
 <li><span class="math inline">\(H_0: \beta_i = 0\)</span> (coefficient <span class="math inline">\(i\)</span> is not significant, thus <span class="math inline">\(X_i\)</span> is not important)</li>
-<li><span class="math inline">\(H_1: \beta_i &gt; 0\)</span> (coefficient <span class="math inline">\(i\)</span> is significant, thus <span class="math inline">\(X_i\)</span> is important)</li>
+<li><span class="math inline">\(H_1: \beta_i \neq 0\)</span> (coefficient <span class="math inline">\(i\)</span> is significant, thus <span class="math inline">\(X_i\)</span> is important)</li>
 </ul>
 <p>We are going to use a simplistic approach in testing these hypotheses in terms of the adopted decision rule. Decision Rule: If the Wald’s z statistic lies between -2 and +2, then the financial ratio, <span class="math inline">\(X_i\)</span>, is not needed and can be dropped from the analysis. Otherwise, we will keep the financial ratio. However, there is some scope here for subjective judgement depending upon how near to +/-2 theWald’s <span class="math inline">\(z\)</span> value is. Therefore we may have to do some “manual” searching upon an acceptable set of explanatory variables, as the z value of all three variables in the model lies between +/-2.</p>
 <p>In our example none of the variables appear to be important judging upon their Wald’s z statstic, yet based on the chi-square statistic <span class="math inline">\(G\)</span>, we know that the fitted model is valid and that the selected variables collectively contribute in explaining the logits.</p>

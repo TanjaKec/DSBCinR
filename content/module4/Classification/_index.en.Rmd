@@ -623,7 +623,7 @@ In addition to the above, the summary of the model includes the deviance and deg
 Before we calculate the $G$ statistic we need to specify the hypotheses:
 
 - $H_0: \beta_i = 0$ 
-- $H_1: \text{at least one is different from }0$
+- $H_1: \text{at least one is different from}0$
 
 where $i = 1, 2, 3$. The decision rule is: 
 
@@ -647,7 +647,7 @@ As $G_{calc}$ = 67.52 > $G_{crit}$ = 7.81 $\Rightarrow H_1$, ie. $p\text{-value}
 In linear regression we assessed the significance of individual regression coefficients, i.e. the contribution of the individual variables using the _t-test_. Here, we use the _z scores_ to conduct the equivalent Wald statistic (test). The ratio of the logistic regression has a normal distribution as opposed to the t-distribution we have seen in linear regression. Nonetheless, the set of hypotheses we wish to test is the same:
 
 - $H_0: \beta_i = 0$    (coefficient $i$ is not significant, thus $X_i$ is not important)
-- $H_1: \beta_i > 0$    (coefficient $i$ is significant, thus $X_i$ is important)
+- $H_1: \beta_i \neq 0$    (coefficient $i$ is significant, thus $X_i$ is important)
 
 We are going to use a simplistic approach in testing these hypotheses in terms of the adopted decision rule. Decision Rule: If the Wald's z statistic lies between -2 and +2, then the financial ratio, $X_i$, is not needed and can be dropped from the analysis. Otherwise, we will keep the financial ratio. However, there is some scope here for subjective judgement depending upon how near to +/-2 theWald's $z$ value is. Therefore we may have to do some "manual" searching upon an acceptable set of explanatory variables, as the z value of all three variables in the model lies between +/-2.
 
