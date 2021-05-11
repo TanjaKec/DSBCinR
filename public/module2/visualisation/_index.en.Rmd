@@ -469,5 +469,7 @@ Practise by doing the following set of exercises:
 
 [ggplot as a creativity engine](http://johnburnmurdoch.github.io/slides/r-ggplot/#/)
 
+[ggplot2 Reference and Examples - Colours](http://rstudio-pubs-static.s3.amazonaws.com/5312_98fc1aba2d5740dd849a5ab797cc2c8d.html)
+
 -----------------------------
 © 2021 Tatjana Kecojevic
